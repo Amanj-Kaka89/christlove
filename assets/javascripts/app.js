@@ -15,3 +15,10 @@ const flickity = new Flickity('.gallery', {
 //   .post(config.site.url, qs.stringify({ 'form-name': config.form.name, ...formData }, { arrayFormat: 'brackets' }))
 //   .then(_ => console.log('success'))
 //   .catch(_ => console.log('failed'));
+let hamburger = document.querySelector('.hamburger');
+// On click
+hamburger.addEventListener('click', () => {
+  // Toggle class "is-active"
+  hamburger.classList.toggle("is-active");
+  // Do something else, like open/close menu
+});
