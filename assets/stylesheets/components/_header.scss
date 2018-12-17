@@ -12,6 +12,12 @@
   }
 
   .menu {
+    display: none;
+
+    @include from(lg) {
+      display: block;
+    }
+
     &__link {
       padding: $h;
     }
