@@ -2,11 +2,11 @@
 {% include 'includes/variables.html' %}
 
 {% block content %}
-{% include 'includes/search.html' %}
-<div class="search container">
+  {% include 'includes/search.html' %}
+  <div class="search container">
     <h1>{{ title }}</h1>
     <div class="search__result">
-        <gcse:search></gcse:search>
+      <gcse:search></gcse:search>
     </div>
-</div>
+  </div>
 {% endblock %}

@@ -1,7 +1,7 @@
 .search {
     &__bar {
         box: horizontal middle space-between;
-        border-button: 1px solid $line;
+        border-bottom: 1px solid $line;
         margin-right: $s;
         padding: $h $q;
 

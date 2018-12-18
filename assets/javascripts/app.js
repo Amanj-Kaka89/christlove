@@ -9,16 +9,19 @@ const flickity = new Flickity('.gallery', {
   // https://flickity.metafizzy.co/options.html
 });
 
+const burger = document.querySelector('button.burger');
+const burgerActive = 'burger--morph';
+const mobilePanel = document.querySelector('.mobile__panel');
+const mobilePanelActive = 'mobile__panel--open';
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle(burgerActive);
+  mobilePanel.classList.toggle(mobilePanelActive);
+});
+
 // import qs from 'qs';
 // import axios from 'axios';
 // axios
 //   .post(config.site.url, qs.stringify({ 'form-name': config.form.name, ...formData }, { arrayFormat: 'brackets' }))
 //   .then(_ => console.log('success'))
 //   .catch(_ => console.log('failed'));
-let hamburger = document.querySelector('.hamburger');
-// On click
-hamburger.addEventListener('click', () => {
-  // Toggle class "is-active"
-  hamburger.classList.toggle("is-active");
-  // Do something else, like open/close menu
-});
