@@ -1,16 +1,17 @@
 <header class="container header">
- <button class="hamburger hamburger--elastic" type="button">
-  <span class="hamburger-box">
-    <span class="hamburger-inner"></span>
-  </span>
-</button>
+  <button class="hamburger hamburger--elastic" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
   <a href="{{ locale.url }}" class="logo">{% Icon 'logo' %}</a>
   {% include 'components/locale.html' %}
+  {% include 'components/search-bar.html' %}
+  {% include 'components/menu-items.html' %}
+
   <nav class="menu" role="navigation">
-    {% include 'components/menu-items.html' %}
   </nav>
   <div class="header-panel">
-  {% include 'components/menu-items.html' %}
+    {% include 'components/menu-items.html' %}
   </div>
-
 </header>
